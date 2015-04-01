@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0x000000ff?>
+<?scenebuilder-stylesheet mystyle.css?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0000999999975" prefWidth="689.0" styleClass="progress" xmlns:fx="http://javafx.com/fxml" fx:controller="javafxapplication2.UIController">
+  <children>
+    <Button id="button" fx:id="record" defaultButton="true" disable="false" layoutX="58.0" layoutY="158.0" mouseTransparent="false" onAction="#recordButtonAction" onMouseEntered="#onMouseEnterR" onMouseExited="#onMouseExitR" opacity="1.0" text="Record" textAlignment="CENTER">
+      <stylesheets>
+        <URL value="@mystyle.css" />
+      </stylesheets>
+    </Button>
+    <Button id="button" fx:id="stop" cancelButton="true" disable="false" layoutX="231.0" layoutY="158.0" mouseTransparent="false" onAction="#stopButtonAction" onMouseEntered="#onMouseEnterS" onMouseExited="#onMouseExitS" opacity="1.0" prefWidth="72.9998779296875" text="Stop" textAlignment="CENTER" textFill="WHITE">
+      <stylesheets>
+        <URL value="@mystyle.css" />
+      </stylesheets>
+    </Button>
+    <TextField fx:id="text1" editable="false" layoutX="14.0" layoutY="231.0" opacity="0.0" prefWidth="200.0" text="" visible="false" />
+    <Label fx:id="label1" alignment="CENTER" layoutX="28.0" layoutY="227.0" prefHeight="168.0" prefWidth="276.0" text="" textFill="#0029ff" wrapText="true">
+      <font>
+        <Font size="20.0" />
+      </font>
+      <stylesheets>
+        <URL value="@mystyle.css" />
+      </stylesheets>
+    </Label>
+    <ProgressIndicator fx:id="progress" layoutX="122.0" layoutY="404.0" prefHeight="88.0" prefWidth="124.0" progress="0.0">
+      <effect>
+        <Glow level="0.4509433962264151" />
+      </effect>
+      <stylesheets>
+        <URL value="@mystyle.css" />
+      </stylesheets>
+    </ProgressIndicator>
+    <Button id="button" fx:id="randomplay" layoutX="481.0" layoutY="167.0" mnemonicParsing="false" onAction="#randplay" text="Random Play" />
+    <Button id="button" fx:id="playbutton2" layoutX="61.0" layoutY="499.0" mnemonicParsing="false" onAction="#play1" prefHeight="27.0" prefWidth="73.0" text="Play" />
+    <Button id="button" fx:id="stop1" layoutX="238.0" layoutY="499.0" mnemonicParsing="false" onAction="#stop1" text="Stop" />
+    <Button id="button" fx:id="record1" layoutX="446.0" layoutY="251.0" mnemonicParsing="false" onAction="#record1" text="Record" />
+    <Button id="button" fx:id="stop2" layoutX="562.0" layoutY="254.0" mnemonicParsing="false" onAction="#stop2" text="Stop" />
+    <ImageView fitHeight="252.79897182123642" fitWidth="189.35520935058594" layoutX="429.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@logo.jpg" />
+      </image>
+    </ImageView>
+    <Separator layoutX="370.0" layoutY="140.0" orientation="VERTICAL" prefHeight="336.0" />
+    <Label layoutX="32.0" layoutY="26.0" prefHeight="88.0" prefWidth="621.0000999999975" text="     Music Search Engine" textAlignment="CENTER">
+      <font>
+        <Font size="50.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@mystyle.css" />
+  </stylesheets>
+</AnchorPane>

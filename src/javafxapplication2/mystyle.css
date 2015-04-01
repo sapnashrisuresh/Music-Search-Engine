@@ -1,0 +1,43 @@
+/* 
+    Document   : mystyle
+    Created on : Mar 7, 2013, 2:57:10 PM
+    Author     : nagashayan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.root { 
+    
+    -fx-background-color:whitesmoke; 
+}
+
+
+#button
+{
+
+	-fx-background-color:#0066FF;
+	-fx-font-family:Arial, Helvetica, sans-serif;
+	-fx-font-size:16px;
+	-fx-color:#000000;
+        
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+
+	
+}
+#progress-indicator
+{
+	
+	-fx-font-family:Arial, Helvetica, sans-serif;
+	-fx-font-size:16px;
+	-fx-color:#0066FF;
+	-fx-background-color:#0066FF;
+	 -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+
+}
+
+#label
+{
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+
+}
+
